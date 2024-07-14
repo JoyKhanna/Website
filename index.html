@@ -6,6 +6,7 @@
   <link href="styles.css" rel="stylesheet">
 </head>
 <body>
+
     <h1> Joy's component library </h1>                          <!-- heading tag -->    <!-- including CSS in header -->
     <p> This is my library to  make all my projects look good and consistent </p>   <!-- paragraph tag -->
 
@@ -17,32 +18,33 @@
 
     <p> This is normal paragraph text </p>
     <small> This is smaller text </small>                                           <!-- smaller text -->
+    <p>This paragraph has <strong>bold text </strong></p>
 
-    <hr> <hr>
+    <hr>
 
     <h2>@container</h2>
     <h3>fluid container</h3>
-    <div> This is a fluid container that will go till the end of this page </div>   <!-- this just holds text in an empty space -->
+    <div class="container container-center"> This is a fluid container that will go till the end of this page </div>   <!-- this just holds text in an empty space -->
 
     <h3>center container</h3>
-    <div> This container will stop in the middle </div>
+    <div class="container"> This container will stop in the middle </div>
 
-    <hr> <hr>
+    <hr>
     <h2>@links</h2>
 
-    <a href=""> Go To Nowhere</a>                                                   <!-- anchor tag for links -->
-    <a href=""> Go To Nowhere 2</a>
+    <a class="link link-primary" href=""> Go To Nowhere</a>                                                   <!-- anchor tag for links -->
+    <a class="link-secondary link" href=""> Go To Nowhere 2</a>
 
     <!-- <a>, <small> are inline tags as even if you put 2 of them them continuously, then the second onw wont start in new line -->
     <!-- whereas <h>, <p> are block tags as they will always start from new line -->
 
-    <hr> <hr>
+    <hr>
 
     <h2>@lists</h2>
 
     <h3> unordered list</h3>
 
-    <ul>                                                                            <!-- unordered list; wont keep number track -->
+    <ul class="list-non-bullet">                                                                            <!-- unordered list; wont keep number track -->
         <li> Item One</li>
         <li> Item Two</li>
         <li> Item Three</li>
@@ -51,43 +53,43 @@
     <h3>unordered inline list</h3>
 
     <ul>
-        <li>Inline Item One</li>
-        <li>Inline Item Two</li>
-        <li>Inline Item Three</li>
+        <li class="list-item-inline">Inline Item One</li>
+        <li class="list-item-inline">Inline Item Two</li>
+        <li class="list-item-inline">Inline Item Three</li>
     </ul>
 
     <h3>reverse ordered list</h3>
 
-    <ol>                                                            <!-- ordered list; will keep track through numbers -->
+    <ol reversed>                                                            <!-- ordered list; will keep track through numbers -->
         <li>milk</li>
         <li>eggs</li>
         <li>toast</li>
     </ol>
 
 
-    <hr> <hr>
+    <hr>
 
     <h2>@nav</h2>
 
-    <h3>I am Brand</h3>
+    <nav class="navigation">
+        <h3>I am Brand</h3>
 
-    <nav>
         <ul>
-            <li>
-                <a href=" "> Home</a>
+            <li class="list-item-inline">
+                <a class="link" href=" "> Home</a>
             </li>
 
-            <li>
-                <a href=" "> Products</a>
+            <li class="list-item-inline">
+                <a class="link" href=" "> Products</a>
             </li>
 
-            <li>
-                <a href=" "> About</a>
+            <li class="list-item-inline">
+                <a class="link" href=" "> About</a>
             </li>
         </ul>
     </nav>
 
-    <hr> <hr>
+    <hr>
 
     <h2>@header</h2>
 
@@ -96,7 +98,7 @@
         <h1> heading inside hero</h1>
     </header>
 
-    <hr> <hr>
+    <hr>
 
     <h2>@section</h2>
 
@@ -110,7 +112,7 @@
         <p>This will have grey background</p>
     </section>
 
-    <hr> <hr>
+    <hr>
 
     <h2>@footer</h2>
 
