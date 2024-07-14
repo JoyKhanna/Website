@@ -69,5 +69,6 @@ hr {
 }
 
 .link .link-active{
-    text-decoration= bold;
+    font-weight: bold;
 }
+
