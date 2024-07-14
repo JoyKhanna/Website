@@ -9,12 +9,13 @@ body {
     font-weight: 400;
     font-style: normal;
     background-color: black;
-    color: #b91c1c;
+    color: var(--primary-color);
 }
 
 hr {
     margin: 2rem 0.5rem;
 }
+
 .container {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -39,7 +40,7 @@ hr {
 
 .link-secondary {
     text-decoration: none;
-    color: red;
+    color: var(--primary-color);
     border-radius: 1rem;
     border: 2px solid var(--primary-color);
 }
@@ -57,13 +58,22 @@ hr {
     padding: 1rem 0rem 0rem 0rem;
     background-color: var(--primary-color);
     color: black;
-    border-radius: 3rem 0.5rem 3rem 0.5rem;
+    border-radius: 0rem 0.5rem 3rem 1.8rem;
+}
+
+.navigation .nav-pills {
+    text-align: right;
+}
+
+.navigation .nav-brand {
+    font-weight: bold;
+    font-size: 1rem;
 }
 
 .navigation .link{
     text-decoration: none;
     background-color: white;
-    color: red;
+    color: var(--primary-color);
     border-radius: 3rem 1rem;
     padding: 1rem;
 }
@@ -72,3 +82,49 @@ hr {
     font-weight: bold;
 }
 
+.hero {
+    padding: 2rem;
+    text-align: center;
+}
+
+.hero .hero-image {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+.hero .hero-heading {
+    color: var(--primary-color);
+}
+
+.hero-heading-inverted {
+    color: white;
+}
+
+.section {
+    padding: 2rem;
+}
+
+.section h3 {
+    text-align: center;
+}
+
+.alignment-section-text {
+    text-align: center;
+}
+
+.footer {
+    background-color: var(--primary-color);
+    color: black;
+    padding: 1.2rem 1rem 0.8rem 1rem;
+    border-radius: 1rem 6rem 0.5rem 0rem;
+}
+
+.footer .link {
+    color: black;
+    text-decoration: none;
+}
+
+.footer .list {
+    text-align: right;
+}
